@@ -1,0 +1,188 @@
+@media screen and (min-width: 700px) {
+    .grider {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 700px) {
+
+    table table {
+        display: none;
+    }
+
+    .grider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grider div:empty {
+        /*display: none;*/
+    }
+    .grider div {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .grider div:nth-child(7n+1),
+    .grider div:nth-child(7n+2)
+    {
+        display: none;
+    }
+    .old-th {
+        font-size: 19px;
+    }
+
+
+    .grider div:nth-child(7n+1) {
+        order: 1;
+    }
+    .grider div:nth-child(7n+2) {
+        order: 2;
+    }
+    .grider div:nth-child(7n+3) {
+        order: 3;
+        color: white;
+        text-shadow: black 3px 1px 3px;
+    }
+    .grider div:nth-child(7n+4) {
+        order: 4;
+        color: white;
+        text-shadow: black 3px 1px 3px;
+    }
+    .grider div:nth-child(7n+5) {
+        order: 5;
+        color: white;
+        text-shadow: black 3px 1px 3px;
+    }
+    .grider div:nth-child(7n+6) {
+        order: 6;
+        color: white;
+        text-shadow: black 3px 1px 3px;
+    }
+    .grider div:nth-child(7n) {
+        order: 7;
+        color: white;
+        text-shadow: black 3px 1px 3px;
+    }
+
+
+    .grider time {
+        width: 25%;
+    }
+    .grider article {
+        display: flex;
+        width: 75%;
+    }
+    .grider article .n {
+        flex-grow: 0;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    .grider article .s {
+        flex-basis: 20%;
+        flex-grow: 0;
+        text-align: center;
+    }
+    .grider article .p {
+        flex-grow: 6;
+        text-align: right;
+    }
+
+
+
+    .grider {
+        font-family: Garamond, sans-serif;
+        font-weight: 500;
+        background: linear-gradient(#5aa7a4, #7b4e8b);
+    }
+    .old-th time {
+        display: none;
+        
+    }
+    .old-th article {
+        /*background-color: red;*/
+        padding-top: 20px;
+        display: block;
+        text-align: right;
+        padding-right: 20px;
+        font-size: 1.75rem;
+        line-height: 3rem;
+        
+    }
+    .grider time {
+        color: white;
+        font-style: italic;
+    }
+    .old-td + .old-td {
+        border-top: 1px solid #ddd;
+        font-size: 1.2rem;
+        line-height: 1.75rem;
+        
+    }
+}
+
+/* some minor tweaks */
+caption {
+    text-align: center;
+    width: 100%;
+}
+form {
+    min-width: 300px;
+    margin: auto;
+    width: 50vw;
+    text-align: center;
+}
+body > div > table {
+    width: 100%;
+}
+body > div > table table {
+    margin: auto;
+}
+
+
+
+/* Only as example */
+.n {
+    color: #000;
+    text-decoration: none;
+    text-align: right;
+}
+
+.tabela {
+    background: linear-gradient(#45a3a0, #6b2c82);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: black 3px 2px 3px;
+    color: white;
+    border-bottom:solid 1px #fff;
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+
+.tabela td{
+        border: 1px solid white;
+        padding: 10px 5px;
+}
+.tabela tr{
+	background: rgba(255,255,255,.3);
+	text-align: center;
+
+}
+.o {
+    color: #ffffff;
+}
+.s {
+    color: white;
+}
+body {
+    background-color: rgb(90, 105, 134);
+}
+caption {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-shadow: black 3px 2px 3px;
+
+}
